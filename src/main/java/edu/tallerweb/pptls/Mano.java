@@ -31,9 +31,9 @@ public class Mano {
 		Forma formaJugador1 = this.valorForma;
 		Forma formaJugador2 = otra.getForma();
 		
-		if(formaJugador1.getValor() == formaJugador2.getValor())
+		if(formaJugador1.getValor() == formaJugador2.getValor()){
 			return Resultado.EMPATA;
-		else{
+		}else{
 			ArrayList<Integer> aQuienLeGana = new ArrayList<Integer>();
 			
 			switch (formaJugador1.getValor()){
@@ -62,11 +62,11 @@ public class Mano {
 				break;
 			}
 			
-			if(aQuienLeGana.contains(formaJugador2.getValor()))
+			if(aQuienLeGana.contains(formaJugador2.getValor())){
 				return Resultado.GANA;
-			else
+			}else{
 				return Resultado.PIERDE;
-			
+			}
 		}		
 	}
 	
