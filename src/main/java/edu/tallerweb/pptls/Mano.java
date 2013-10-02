@@ -24,14 +24,13 @@ public class Mano {
 	 * @return un Resultado, de acuerdo al estado del juego.
 	 */
 	public Resultado jugarCon(final Mano otra) {
-		
 		Forma formaJugador1 = this.valorForma;
 		Forma formaJugador2 = otra.getForma();
-		if(formaJugador1.getValor() == formaJugador2.getValor()){
+		if(formaJugador1.getValor() == formaJugador2.getValor()) {
 			return Resultado.EMPATA;
-		}else{
+		}else {
 			ArrayList<Integer> aQuienLeGana = new ArrayList<Integer>();
-			switch (formaJugador1.getValor()){
+			switch (formaJugador1.getValor()) {
 			case 0:
 				aQuienLeGana.add(3);
 				aQuienLeGana.add(4);
@@ -55,23 +54,23 @@ public class Mano {
 			default:
 				break;
 			}
-			if(aQuienLeGana.contains(formaJugador2.getValor())){
+			if(aQuienLeGana.contains(formaJugador2.getValor())) {
 				return Resultado.GANA;
-			}else{
+			}else {
 				return Resultado.PIERDE;
 			}
 		}		
 	}
 	
-	public String getNombre(){
+	public String getNombre() {
 		return this.nombreJugador;
 	}
 	
-	public void setNombre(String nom){
+	public void setNombre(String nom) {
 		this.nombreJugador = nom;		
 	}
 	
-	public Forma getForma(){
+	public Forma getForma() {
 		return this.valorForma;
 	}
 	
