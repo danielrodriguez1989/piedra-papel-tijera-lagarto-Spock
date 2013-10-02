@@ -6,17 +6,14 @@ import java.util.ArrayList;
  * Representa una de las Manos involucradas en el juego
  */
 public class Mano {
-	
 	private Forma valorForma = null;
 	private String nombreJugador = null;
-	
 	/**
 	 * Toda Mano debe crearse con una forma dada, que será
 	 * la que determine su condición en el juego.
 	 * @param forma, la Forma que adopta la Mano.
 	 */
 	public Mano(final Forma forma) {
-		
 		this.valorForma = forma;
 	}
 
@@ -30,14 +27,11 @@ public class Mano {
 		
 		Forma formaJugador1 = this.valorForma;
 		Forma formaJugador2 = otra.getForma();
-		
 		if(formaJugador1.getValor() == formaJugador2.getValor()){
 			return Resultado.EMPATA;
 		}else{
 			ArrayList<Integer> aQuienLeGana = new ArrayList<Integer>();
-			
 			switch (formaJugador1.getValor()){
-
 			case 0:
 				aQuienLeGana.add(3);
 				aQuienLeGana.add(4);
@@ -61,7 +55,6 @@ public class Mano {
 			default:
 				break;
 			}
-			
 			if(aQuienLeGana.contains(formaJugador2.getValor())){
 				return Resultado.GANA;
 			}else{
