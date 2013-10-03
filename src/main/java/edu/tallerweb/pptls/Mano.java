@@ -59,20 +59,15 @@ public class Mano {
 			} else {
 				return Resultado.PIERDE;
 			}
-		}		
+		}
 	}
-	
 	public String getNombre() {
 		return this.nombreJugador;
 	}
-	
 	public void setNombre(String nom) {
-		this.nombreJugador = nom;		
+		this.nombreJugador = nom;
 	}
-	
 	public Forma getForma() {
 		return this.valorForma;
 	}
-	
-
 }
