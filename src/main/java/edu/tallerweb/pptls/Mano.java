@@ -43,24 +43,24 @@ public class Mano {
 			ArrayList<Integer> aQuienLeGana = new ArrayList<Integer>();
 			switch (formaJugador1.getValor()) {
 			case 0:
-				aQuienLeGana.add(3);
-				aQuienLeGana.add(4);
+				aQuienLeGana.add(tres);
+				aQuienLeGana.add(cuatro);
 				break;
 			case 1:
-				aQuienLeGana.add(0);
-				aQuienLeGana.add(4);
+				aQuienLeGana.add(cero);
+				aQuienLeGana.add(cuatro);
 				break;
 			case 2:
-				aQuienLeGana.add(0);
-				aQuienLeGana.add(1);
+				aQuienLeGana.add(cero);
+				aQuienLeGana.add(uno);
 				break;
 			case 3:
-				aQuienLeGana.add(1);
-				aQuienLeGana.add(2);
+				aQuienLeGana.add(uno);
+				aQuienLeGana.add(dos);
 				break;
 			case 4:
-				aQuienLeGana.add(2);
-				aQuienLeGana.add(3);
+				aQuienLeGana.add(dos);
+				aQuienLeGana.add(tres);
 				break;
 			default:
 				break;
