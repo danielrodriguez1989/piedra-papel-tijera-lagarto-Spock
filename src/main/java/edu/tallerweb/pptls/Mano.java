@@ -2,13 +2,6 @@ package edu.tallerweb.pptls;
 
 import java.util.ArrayList;
 
-
-public Integer cero = 0;
-public Integer uno = 1;
-public Integer dos = 2;
-public Integer tres = 3;
-public Integer cuatro = 4;
-
 /**
  * Representa una de las Manos involucradas en el juego
  */
@@ -43,24 +36,24 @@ public class Mano {
 			ArrayList<Integer> aQuienLeGana = new ArrayList<Integer>();
 			switch (formaJugador1.getValor()) {
 			case 0:
-				aQuienLeGana.add(tres);
-				aQuienLeGana.add(cuatro);
+				aQuienLeGana.add(3);
+				aQuienLeGana.add(4);
 				break;
 			case 1:
-				aQuienLeGana.add(cero);
-				aQuienLeGana.add(cuatro);
+				aQuienLeGana.add(0);
+				aQuienLeGana.add(4);
 				break;
 			case 2:
-				aQuienLeGana.add(cero);
-				aQuienLeGana.add(uno);
+				aQuienLeGana.add(0);
+				aQuienLeGana.add(1);
 				break;
 			case 3:
-				aQuienLeGana.add(uno);
-				aQuienLeGana.add(dos);
+				aQuienLeGana.add(1);
+				aQuienLeGana.add(2);
 				break;
 			case 4:
-				aQuienLeGana.add(dos);
-				aQuienLeGana.add(tres);
+				aQuienLeGana.add(2);
+				aQuienLeGana.add(3);
 				break;
 			default:
 				break;
