@@ -2,6 +2,13 @@ package edu.tallerweb.pptls;
 
 import java.util.ArrayList;
 
+
+public int cero = 0;
+public int uno = 1;
+public int dos = 2;
+public int tres = 3;
+public int cuatro = 4;
+
 /**
  * Representa una de las Manos involucradas en el juego
  */
@@ -70,7 +77,7 @@ public class Mano {
 		return this.nombreJugador;
 	}
 
-	public void setNombre(String nom) {
+	public void setNombre(final String nom) {
 		this.nombreJugador = nom;
 	}
 
