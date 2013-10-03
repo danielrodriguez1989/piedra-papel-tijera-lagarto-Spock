@@ -8,23 +8,19 @@ import java.util.ArrayList;
 public class Mano {
 	private Forma valorForma = null;
 	private String nombreJugador = null;
-
 	/**
-	 * Toda Mano debe crearse con una forma dada, que será la que determine su
-	 * condición en el juego.
-	 * 
-	 * @param forma
-	 *            , la Forma que adopta la Mano.
+	 * Toda Mano debe crearse con una forma dada, que será
+	 * la que determine su condición en el juego.
+	 * @param forma, la Forma que adopta la Mano.
 	 */
 	public Mano(final Forma forma) {
 		this.valorForma = forma;
 	}
 
 	/**
-	 * Evaluará el resultado de la partida según las reglas del juego.
-	 * 
-	 * @param otra
-	 *            , la otra Mano.
+	 * Evaluará el resultado de la partida según las reglas
+	 * del juego.
+	 * @param otra, la otra Mano.
 	 * @return un Resultado, de acuerdo al estado del juego.
 	 */
 	public Resultado jugarCon(final Mano otra) {
@@ -65,15 +61,12 @@ public class Mano {
 			}
 		}
 	}
-
 	public String getNombre() {
 		return this.nombreJugador;
 	}
-
-	public void setNombre(final String nom) {
+	public void setNombre(String nom) {
 		this.nombreJugador = nom;
 	}
-
 	public Forma getForma() {
 		return this.valorForma;
 	}
