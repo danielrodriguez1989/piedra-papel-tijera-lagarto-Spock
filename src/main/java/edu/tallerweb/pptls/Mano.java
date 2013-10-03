@@ -3,11 +3,11 @@ package edu.tallerweb.pptls;
 import java.util.ArrayList;
 
 
-public int cero = 0;
-public int uno = 1;
-public int dos = 2;
-public int tres = 3;
-public int cuatro = 4;
+public Integer cero = 0;
+public Integer uno = 1;
+public Integer dos = 2;
+public Integer tres = 3;
+public Integer cuatro = 4;
 
 /**
  * Representa una de las Manos involucradas en el juego
